@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+	<Gun_FRtrankvilizator.label>jet injector</Gun_FRtrankvilizator.label>
+	<Gun_FRtrankvilizator.description>Weapon of remote immobilization. A weapon that fires special tranquilizer darts. Can be used to immobilize animals and more. The long pace of preparation and charging is due to the preparation of the drug, based on the size of the target.</Gun_FRtrankvilizator.description>
+
+	<Gun_FRtrankvilizatortribleuno.label>small blowgun</Gun_FRtrankvilizatortribleuno.label>
+	<Gun_FRtrankvilizatortribleuno.description>A blowgun that is a hollow tube that guides a projectile propelled by air blown by a person. A paralytic toxin is used. Suitable for hunting small game.</Gun_FRtrankvilizatortribleuno.description>
+
+	<Gun_FRtrankvilizatortribleduo.label>blowgun</Gun_FRtrankvilizatortribleduo.label>
+	<Gun_FRtrankvilizatortribleduo.description>A blowgun that is a hollow tube that guides a projectile propelled by air blown by a person. A paralytic toxin is used. There are cases when an incorrect dose of toxin led to damage to the motor centers of the cerebral cortex, i.e. to abasia.</Gun_FRtrankvilizatortribleduo.description>
+
+</LanguageData>

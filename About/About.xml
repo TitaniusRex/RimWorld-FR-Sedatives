@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Floran Root - Sedatives</name>
+    <author>TitaniusRex</author>
+    <supportedVersions>
+		<li>1.4</li>
+    </supportedVersions>
+	<packageId>TitaniusRex.FloranRootSedatives</packageId>
+    <description>
+A simple mod that adds a tranquilizer weapon.
+
+Простой мод, который добавляет оружие транквилизатор.
+	</description>
+	
+	
+	<loadAfter>
+	    <li>Ludeon.RimWorld</li>
+	</loadAfter>
+</ModMetaData>
+
+

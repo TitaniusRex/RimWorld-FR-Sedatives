@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--=================================================== industrial =============================================================-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>Gun_FRtrankvilizator</defName>
+		<label>jet injector</label>
+		<description>Weapon of remote immobilization. A weapon that fires special tranquilizer darts. Can be used to immobilize animals and more. The long pace of preparation and charging is due to the preparation of the drug, based on the size of the target.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/FRtrankvilizator/Stopper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponClasses>
+			<li>LongShots</li>
+		</weaponClasses>
+		<recipeMaker>
+			<researchPrerequisite>VenomSynthesis</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<displayPriority>425</displayPriority>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>45000</WorkToMake>
+			<Mass>2</Mass>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.80</AccuracyMedium>
+			<AccuracyLong>0.80</AccuracyLong>
+			<RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>60</Steel>
+			<Uranium>5</Uranium>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_FRtrankvilizator</defaultProjectile>		
+				<warmupTime>8</warmupTime>
+				<range>55</range>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<weaponTags Inherit="False">
+			<li>Gun_FRtrankvilizator</li>
+		</weaponTags>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet" Class="FloranRootTranquilizer.ThingDefTranquillizerBullet">
+		<defName>Bullet_FRtrankvilizator</defName>
+		<label>Tranquilizer Dart</label>
+		<graphicData>
+			<texPath>Things/Projectile/Arrow_DartC/Arrow_Dart</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>0</damageAmountBase>
+			<stoppingPower>0</stoppingPower>
+			<armorPenetrationBase>0.2</armorPenetrationBase>
+			<speed>100</speed>
+		</projectile>
+			
+			<HediffToAdd>Anesthetic</HediffToAdd>
+			<thingClass>FloranRootTranquilizer.ProjectileTranquillizerBullet</thingClass>
+
+		</ThingDef>
+<!--===================================================== tribal 1 ===========================================================-->
+	
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>Gun_FRtrankvilizatortribleuno</defName>
+		<label>small blowgun</label>
+		<description>A blowgun that is a hollow tube that guides a projectile propelled by air blown by a person. A paralytic toxin is used. Suitable for hunting small game.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/FRtrankvilizatortrible/blowgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+			<researchPrerequisite>TreeSowing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<effectWorking>Smelt</effectWorking>
+			<soundWorking>Recipe_MakeBow</soundWorking>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+			<displayPriority>425</displayPriority>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>1</Mass>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.60</AccuracyShort>
+			<AccuracyMedium>0.10</AccuracyMedium>
+			<AccuracyLong>0</AccuracyLong>
+			<RangedWeapon_Cooldown>7</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>10</Steel>
+			<WoodLog>80</WoodLog>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_FRtrankvilizatortriblebl</defaultProjectile>
+				<warmupTime>10</warmupTime>
+				<range>12</range>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<weaponTags Inherit="False">
+			<li>Gun_FRtrankvilizatortribleuno</li>
+			<li>NoRelic</li>
+		</weaponTags>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet" Class="FloranRootTranquilizer.ThingDefTranquillizerBullet">
+		<defName>Bullet_FRtrankvilizatortriblebl</defName>
+		<label>Tranquilizer Dart</label>
+		<graphicData>
+			<texPath>Things/Projectile/Arrow_DartA/Arrow_Dart</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<stoppingPower>0</stoppingPower>
+			<armorPenetrationBase>0</armorPenetrationBase>
+			<speed>40</speed>
+		</projectile>
+
+		<HediffToAdd>Anesthetic</HediffToAdd>
+		<thingClass>FloranRootTranquilizer.ProjectileTranquillizerBullet</thingClass>
+
+	</ThingDef>
+
+	<!--===================================================== tribal 2 ===========================================================-->
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>Gun_FRtrankvilizatortribleduo</defName>
+		<label>blowgun</label>
+		<description>A blowgun that is a hollow tube that guides a projectile propelled by air blown by a person. A paralytic toxin is used. There are cases when an incorrect dose of toxin led to damage to the motor centers of the cerebral cortex, i.e. to abasia.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/FRtrankvilizatortrible/bigblowgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+			<researchPrerequisite>TreeSowing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+			<effectWorking>Smelt</effectWorking>
+			<soundWorking>Recipe_MakeBow</soundWorking>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+			<displayPriority>425</displayPriority>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>25000</WorkToMake>
+			<Mass>2</Mass>
+			<AccuracyTouch>0.40</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0</AccuracyLong>
+			<RangedWeapon_Cooldown>10</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>10</Steel>
+			<WoodLog>120</WoodLog>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_FRtrankvilizatortriblere</defaultProjectile>
+				<warmupTime>15</warmupTime>
+				<range>28.9</range>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<weaponTags Inherit="False">
+			<li>Gun_FRtrankvilizatortribleduo</li>
+			<li>NoRelic</li>
+		</weaponTags>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet" Class="FloranRootTranquilizer.ThingDefTranquillizerBullet">
+		<defName>Bullet_FRtrankvilizatortriblere</defName>
+		<label>Tranquilizer Dart</label>
+		<graphicData>
+			<texPath>Things/Projectile/Arrow_DartB/Arrow_Dart</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<stoppingPower>0</stoppingPower>
+			<armorPenetrationBase>0.1</armorPenetrationBase>
+			<speed>40</speed>
+		</projectile>
+
+		<HediffToAdd>Anesthetic</HediffToAdd>
+		<thingClass>FloranRootTranquilizer.ProjectileTranquillizerBullet</thingClass>
+
+	</ThingDef>
+	
+</Defs>

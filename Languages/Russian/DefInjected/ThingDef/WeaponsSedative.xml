@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+	<Gun_FRtrankvilizator.label>медицинский инъектор</Gun_FRtrankvilizator.label>
+	<Gun_FRtrankvilizator.description>Оружие дистанционного обездвиживания. Оружие, которое стреляет специальными дротиками-шприцами с транквилизаторами. Может использоваться для обездвиживания животных и не только. Длительный темп подготовки и зарядки обусловлен подготовкой препарата, основанном на размере цели.</Gun_FRtrankvilizator.description>
+
+	<Gun_FRtrankvilizatortribleuno.label>малая духовая трубка</Gun_FRtrankvilizatortribleuno.label>
+	<Gun_FRtrankvilizatortribleuno.description>Духовое оружие, представляющее собой полую трубку, которая направляет снаряд, приводимый в движение воздухом, выдуваемым человеком. Используеться паралитический токсин. Применима для охоты на мелкую дичь.</Gun_FRtrankvilizatortribleuno.description>
+
+	<Gun_FRtrankvilizatortribleduo.label>духовая трубка</Gun_FRtrankvilizatortribleduo.label>
+	<Gun_FRtrankvilizatortribleduo.description>Духовое оружие, представляющее собой полую трубку, которая направляет снаряд, приводимый в движение воздухом, выдуваемым человеком. Используеться паралитический токсин. Известны случае когда неправильная доза токсина приводила к поражению моторных центров коры головного мозга т.е. к абазии.</Gun_FRtrankvilizatortribleduo.description>
+
+</LanguageData>
