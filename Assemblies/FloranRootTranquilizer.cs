@@ -9,8 +9,8 @@ public static class HediffDefTranquilizer
 	public static HediffDef Anesthetic;
 }
 
-public class ProjectileTranquillizerBullet : Bullet
-{
+    public class ProjectileTranquillizerBullet : Bullet
+    {
 	public HediffDef HediffToAdd = HediffDefTranquilizer.Anesthetic;
 
 	public ThingDefTranquillizerBullet Def => def as ThingDefTranquillizerBullet;
