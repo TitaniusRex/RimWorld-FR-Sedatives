@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
+	
 	<!--=================================================== industrial =============================================================-->
+	
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Gun_FRtrankvilizator</defName>
 		<label>jet injector</label>
