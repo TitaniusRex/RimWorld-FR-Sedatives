@@ -91,6 +91,7 @@
 			<thingClass>FloranRootTranquilizer.ProjectileTranquillizerBullet</thingClass>
 
 		</ThingDef>
+	
 <!--===================================================== tribal 1 ===========================================================-->
 	
 	<ThingDef ParentName="BaseHumanMakeableGun">
