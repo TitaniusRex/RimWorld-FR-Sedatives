@@ -32,6 +32,6 @@ public static class HediffDefTranquilizer
 
 
 public class ThingDefTranquillizerBullet : ThingDef
-{
+    {
 	public HediffDef HediffToAdd = HediffDefOf.Anesthetic;
 }
